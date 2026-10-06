@@ -1,17 +1,578 @@
 ---
-
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="from.midway — a little corner of the internet by Anusha YK."
+    />
+    <title>from.midway — Anusha YK</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo">from.midway</a>
+
+        <div class="nav-links">
+          <a href="#deep-dives">Deep Dives</a>
+          <a href="#about">About</a>
+          <a href="#notes">Notes</a>
+        </div>
+      </nav>
+    </header>
+
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+
+        <div class="hero-content">
+          <p class="eyebrow">A LITTLE CORNER OF THE INTERNET</p>
+
+          <h1>
+            Curious about<br />
+            almost everything.
+          </h1>
+
+          <p class="intro">
+            Thoughts, questions, and rabbit holes —
+            documented somewhere between curiosity
+            and understanding.
+          </p>
+
+          <a href="#deep-dives" class="button">
+            Explore the deep dives →
+          </a>
+        </div>
+
+
+        <div class="hero-doodle">
+          <span>✦</span>
+          <div class="doodle-line"></div>
+          <span class="paper-plane">➤</span>
+        </div>
+
+      </section>
+
+
+      <!-- ABOUT -->
+      <section id="about" class="about section-line">
+
+        <div class="about-image">
+          <img
+            src="/images/WhatsApp%20Image%202025-09-02%20at%2012.01.01%20PM%20%283%29%20-%20Edited.jpg"
+            alt="Anusha"
+          />
+        </div>
+
+
+        <div class="about-content">
+
+          <p class="eyebrow">01 — ABOUT</p>
+
+          <h2>Hi, I’m Anusha.</h2>
+
+          <p>
+            I’m an undergraduate student who enjoys exploring
+            technology, science, people, ideas, and the questions
+            that make me stop and wonder.
+          </p>
+
+          <p>
+            When something catches my attention, I tend to go
+            down the rabbit hole. <em>from.midway</em> is where
+            I document what I find along the way.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- DEEP DIVES -->
+      <section id="deep-dives" class="deep-dives section-line">
+
+        <div class="section-inner">
+
+          <p class="eyebrow">02 — DEEP DIVES</p>
+
+          <h2>Things I’ve been curious about.</h2>
+
+          <article class="article-card">
+
+            <div class="article-number">
+              01
+            </div>
+
+            <div class="article-info">
+
+              <p class="coming-soon">
+                COMING SOON
+              </p>
+
+              <h3>
+                The first rabbit hole
+              </h3>
+
+              <p>
+                The first deep dive is currently being researched.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- NOTES -->
+      <section id="notes" class="notes section-line">
+
+        <div class="section-inner">
+
+          <p class="eyebrow">03 — NOTES</p>
+
+          <h2>Small thoughts.</h2>
+
+          <p>
+            Not everything needs a 2,000-word investigation.
+            Some thoughts can simply exist here.
+          </p>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      <p>
+        <em>from.midway</em> — still learning, still wondering.
+      </p>
+
+    </footer>
+
+
+    <style>
+
+      /* =================================
+         COLOUR PALETTE
+      ================================= */
+
+      :global(*) {
+        box-sizing: border-box;
+      }
+
+      :global(html) {
+        scroll-behavior: smooth;
+      }
+
+      :global(body) {
+        margin: 0;
+        background: #faf7ff;
+        color: #292433;
+        font-family: Georgia, "Times New Roman", serif;
+      }
+
+
+      /* =================================
+         NAVIGATION
+      ================================= */
+
+      .nav {
+        height: 64px;
+        padding: 0 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f4efff;
+        border-bottom: 1px solid #ddd2ef;
+      }
+
+      .logo {
+        color: #292433;
+        text-decoration: none;
+        font-size: 25px;
+        letter-spacing: -1px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 34px;
+      }
+
+      .nav-links a {
+        color: #4e4659;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        transition: 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: #8570b5;
+      }
+
+
+      /* =================================
+         HERO
+      ================================= */
+
+      .hero {
+        min-height: 440px;
+        padding: 80px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background:
+          radial-gradient(
+            circle at 85% 35%,
+            #eee4ff 0,
+            #f7f2ff 24%,
+            transparent 45%
+          );
+      }
+
+      .hero-content {
+        max-width: 650px;
+      }
+
+      .eyebrow {
+        margin: 0 0 20px;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        letter-spacing: 2.5px;
+        color: #8873b2;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(50px, 6vw, 78px);
+        line-height: 0.98;
+        font-weight: 400;
+        letter-spacing: -3px;
+        color: #292433;
+      }
+
+      .intro {
+        max-width: 470px;
+        margin: 28px 0;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #716a7b;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 13px 22px;
+        border: 1px solid #a997c7;
+        border-radius: 2px;
+        color: #4d4260;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        background: #f4efff;
+        transition: 0.25s ease;
+      }
+
+      .button:hover {
+        background: #dcd0f4;
+        border-color: #a18abc;
+        color: #292433;
+      }
+
+
+      /* =================================
+         HERO DOODLE
+      ================================= */
+
+      .hero-doodle {
+        width: 230px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transform: rotate(-5deg);
+        margin-right: 8%;
+        color: #917db8;
+      }
+
+      .hero-doodle span {
+        font-size: 22px;
+      }
+
+      .doodle-line {
+        width: 120px;
+        height: 60px;
+        border-top: 1px solid #a99ac1;
+        border-radius: 50%;
+        transform: rotate(20deg);
+      }
+
+      .paper-plane {
+        font-size: 24px !important;
+        transform: rotate(-35deg);
+      }
+
+
+      /* =================================
+         SECTION DIVIDERS
+      ================================= */
+
+      .section-line {
+        border-top: 1px solid #ddd2ef;
+      }
+
+      .section-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+
+      /* =================================
+         ABOUT
+      ================================= */
+
+      .about {
+        padding: 70px 10%;
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 75px;
+        align-items: center;
+        background: #faf7ff;
+      }
+
+
+      /* SMALL CIRCULAR PHOTO */
+
+      .about-image {
+        width: 175px;
+        height: 175px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 5px solid #eee5fb;
+        box-shadow: 0 8px 25px rgba(112, 89, 145, 0.12);
+        margin: 0 auto;
+        background: #eee5fb;
+      }
+
+      .about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+
+
+      .about-content {
+        max-width: 550px;
+      }
+
+      h2 {
+        margin: 0 0 25px;
+        font-size: 36px;
+        line-height: 1.1;
+        font-weight: 400;
+        letter-spacing: -1px;
+        color: #30283a;
+      }
+
+      .about-content p:not(.eyebrow) {
+        font-size: 17px;
+        line-height: 1.65;
+        color: #706879;
+        margin: 0 0 18px;
+      }
+
+      .about-content em {
+        color: #635080;
+      }
+
+
+      /* =================================
+         DEEP DIVES
+      ================================= */
+
+      .deep-dives {
+        padding: 70px 10%;
+        background: #f6f0ff;
+      }
+
+      .deep-dives h2 {
+        margin-bottom: 35px;
+      }
+
+
+      /* =================================
+         ARTICLE CARD
+      ================================= */
+
+      .article-card {
+        border: 1px solid #d8cbe9;
+        background: #fbf9ff;
+        padding: 30px 35px;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        max-width: 800px;
+        border-radius: 4px;
+        transition: 0.25s ease;
+      }
+
+      .article-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(116, 91, 151, 0.08);
+      }
+
+      .article-number {
+        font-size: 25px;
+        color: #a08dbd;
+      }
+
+      .article-info {
+        border-left: 1px solid #ddd2ef;
+        padding-left: 28px;
+      }
+
+      .coming-soon {
+        margin: 0 0 8px;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        letter-spacing: 2px;
+        color: #9176b5;
+      }
+
+      .article-info h3 {
+        margin: 0 0 8px;
+        font-size: 22px;
+        font-weight: 400;
+        color: #332b3c;
+      }
+
+      .article-info p:last-child {
+        margin: 0;
+        color: #777080;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+
+      /* =================================
+         NOTES
+      ================================= */
+
+      .notes {
+        padding: 70px 10%;
+        background: #fffaff;
+      }
+
+      .notes p:last-child {
+        color: #706879;
+        font-size: 17px;
+        line-height: 1.65;
+        max-width: 450px;
+      }
+
+
+      /* =================================
+         FOOTER
+      ================================= */
+
+      footer {
+        border-top: 1px solid #ddd2ef;
+        text-align: center;
+        padding: 35px 20px;
+        background: #f1eaff;
+        color: #756d80;
+        font-size: 13px;
+      }
+
+      footer em {
+        color: #66547d;
+      }
+
+
+      /* =================================
+         MOBILE
+      ================================= */
+
+      @media (max-width: 750px) {
+
+        .nav {
+          padding: 0 6%;
+        }
+
+        .nav-links {
+          gap: 15px;
+        }
+
+        .nav-links a {
+          font-size: 11px;
+        }
+
+
+        .hero {
+          padding: 65px 8%;
+          min-height: auto;
+        }
+
+        h1 {
+          font-size: 48px;
+        }
+
+        .hero-doodle {
+          display: none;
+        }
+
+
+        .about {
+          padding: 60px 8%;
+          grid-template-columns: 1fr;
+          gap: 35px;
+          text-align: left;
+        }
+
+        .about-image {
+          width: 170px;
+          height: 170px;
+          margin: 0;
+        }
+
+
+        .deep-dives,
+        .notes {
+          padding: 60px 8%;
+        }
+
+
+        .article-card {
+          padding: 22px;
+        }
+
+        .article-info {
+          padding-left: 20px;
+        }
+
+
+        h2 {
+          font-size: 32px;
+        }
+
+      }
+
+    </style>
+
+  </body>
 </html>
