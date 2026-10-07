@@ -1,0 +1,168 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Write — from.midway</title>
+  </head>
+
+  <body>
+    <main class="writing-page">
+
+      <div class="flower-border">
+        <span>❀</span>
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+        <span>❀</span>
+        <span>✿</span>
+      </div>
+
+      <div class="paper">
+        <!-- writing space -->
+      </div>
+
+    </main>
+  </body>
+</html>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #eee6fa;
+    color: #4a3d57;
+  }
+
+  .writing-page {
+    min-height: 100vh;
+    padding: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+      radial-gradient(circle at 15% 20%, #f8f2ff 0%, transparent 30%),
+      radial-gradient(circle at 85% 80%, #e4d7f5 0%, transparent 32%),
+      #eee6fa;
+  }
+
+  .paper {
+    position: relative;
+    width: min(1000px, 92vw);
+    min-height: 88vh;
+    background: #fffaff;
+    border: 1px solid #dfd1ef;
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(115, 91, 145, 0.12);
+  }
+
+  .flower-border {
+    position: absolute;
+    inset: 24px;
+    z-index: 2;
+    pointer-events: none;
+    border: 1.5px solid #cbb8df;
+    border-radius: 25px;
+  }
+
+  .flower-border span {
+    position: absolute;
+    font-size: 25px;
+    color: #a992c5;
+    background: #fffaff;
+    padding: 4px 7px;
+    line-height: 1;
+  }
+
+  .flower-border span:nth-child(1) {
+    top: -18px;
+    left: 8%;
+  }
+
+  .flower-border span:nth-child(2) {
+    top: -18px;
+    left: 24%;
+  }
+
+  .flower-border span:nth-child(3) {
+    top: -18px;
+    left: 42%;
+  }
+
+  .flower-border span:nth-child(4) {
+    top: -18px;
+    left: 61%;
+  }
+
+  .flower-border span:nth-child(5) {
+    top: -18px;
+    left: 79%;
+  }
+
+  .flower-border span:nth-child(6) {
+    right: -18px;
+    top: 18%;
+  }
+
+  .flower-border span:nth-child(7) {
+    right: -18px;
+    top: 36%;
+  }
+
+  .flower-border span:nth-child(8) {
+    right: -18px;
+    top: 55%;
+  }
+
+  .flower-border span:nth-child(9) {
+    right: -18px;
+    top: 74%;
+  }
+
+  .flower-border span:nth-child(10) {
+    bottom: -18px;
+    left: 15%;
+  }
+
+  .flower-border span:nth-child(11) {
+    bottom: -18px;
+    left: 43%;
+  }
+
+  .flower-border span:nth-child(12) {
+    bottom: -18px;
+    left: 72%;
+  }
+
+  @media (max-width: 700px) {
+    .writing-page {
+      padding: 20px;
+    }
+
+    .paper {
+      width: 100%;
+      min-height: 94vh;
+    }
+
+    .flower-border {
+      inset: 15px;
+    }
+
+    .flower-border span {
+      font-size: 19px;
+    }
+  }
+</style>

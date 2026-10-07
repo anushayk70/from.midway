@@ -6,24 +6,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
     <meta
       name="description"
       content="from.midway — a little corner of the internet by Anusha YK."
     />
+
     <title>from.midway — Anusha YK</title>
   </head>
 
   <body>
+
     <!-- NAVIGATION -->
+
     <header>
       <nav class="nav">
-        <a href="/" class="logo">from.midway</a>
+
+        <a href="/" class="logo">
+          from.midway
+        </a>
 
         <div class="nav-links">
           <a href="#deep-dives">Deep Dives</a>
           <a href="#about">About</a>
           <a href="#notes">Notes</a>
         </div>
+
       </nav>
     </header>
 
@@ -31,10 +39,14 @@
     <main>
 
       <!-- HERO -->
+
       <section class="hero">
 
         <div class="hero-content">
-          <p class="eyebrow">A LITTLE CORNER OF THE INTERNET</p>
+
+          <p class="eyebrow">
+            A LITTLE CORNER OF THE INTERNET
+          </p>
 
           <h1>
             Curious about<br />
@@ -50,34 +62,46 @@
           <a href="#deep-dives" class="button">
             Explore the deep dives →
           </a>
+
         </div>
 
 
         <div class="hero-doodle">
+
           <span>✦</span>
+
           <div class="doodle-line"></div>
+
           <span class="paper-plane">➤</span>
+
         </div>
 
       </section>
 
 
       <!-- ABOUT -->
+
       <section id="about" class="about section-line">
 
         <div class="about-image">
+
           <img
             src="/images/WhatsApp%20Image%202025-09-02%20at%2012.01.01%20PM%20%283%29%20-%20Edited.jpg"
             alt="Anusha"
           />
+
         </div>
 
 
         <div class="about-content">
 
-          <p class="eyebrow">01 — ABOUT</p>
+          <p class="eyebrow">
+            01 — ABOUT
+          </p>
 
-          <h2>Hi, I’m Anusha.</h2>
+          <h2>
+            Hi, I’m Anusha.
+          </h2>
 
           <p>
             I’m an undergraduate student who enjoys exploring
@@ -88,7 +112,7 @@
           <p>
             When something catches my attention, I tend to go
             down the rabbit hole. <em>from.midway</em> is where
-            I document what I find along the way.
+            I document what I find along the way and share them with all!
           </p>
 
         </div>
@@ -97,37 +121,56 @@
 
 
       <!-- DEEP DIVES -->
+
       <section id="deep-dives" class="deep-dives section-line">
 
         <div class="section-inner">
 
-          <p class="eyebrow">02 — DEEP DIVES</p>
+          <p class="eyebrow">
+            02 — DEEP DIVES
+          </p>
 
-          <h2>Things I’ve been curious about.</h2>
+          <h2>
+            Things I’ve been curious about.
+          </h2>
 
-          <article class="article-card">
+
+          <!-- NEELAKURINJI ARTICLE -->
+
+          <a
+            href="/deep-dives/neelakurinji"
+            class="article-card"
+          >
 
             <div class="article-number">
               01
             </div>
 
+
             <div class="article-info">
 
               <p class="coming-soon">
-                COMING SOON
+                DRAFT · RESEARCHING
               </p>
 
               <h3>
-                The first rabbit hole
+                The flower that waits 12 years
               </h3>
 
               <p>
-                The first deep dive is currently being researched.
+                Neelakurinji — the flower that turns parts of the
+                Western Ghats purple, then disappears for years.
+                Why does it wait so long to bloom?
               </p>
 
             </div>
 
-          </article>
+
+            <div class="article-arrow">
+              →
+            </div>
+
+          </a>
 
         </div>
 
@@ -135,13 +178,18 @@
 
 
       <!-- NOTES -->
+
       <section id="notes" class="notes section-line">
 
         <div class="section-inner">
 
-          <p class="eyebrow">03 — NOTES</p>
+          <p class="eyebrow">
+            03 — NOTES
+          </p>
 
-          <h2>Small thoughts.</h2>
+          <h2>
+            Small thoughts.
+          </h2>
 
           <p>
             Not everything needs a 2,000-word investigation.
@@ -156,6 +204,7 @@
 
 
     <!-- FOOTER -->
+
     <footer>
 
       <p>
@@ -168,16 +217,18 @@
     <style>
 
       /* =================================
-         COLOUR PALETTE
+         GLOBAL
       ================================= */
 
       :global(*) {
         box-sizing: border-box;
       }
 
+
       :global(html) {
         scroll-behavior: smooth;
       }
+
 
       :global(body) {
         margin: 0;
@@ -194,32 +245,41 @@
       .nav {
         height: 64px;
         padding: 0 7%;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         background: #f4efff;
         border-bottom: 1px solid #ddd2ef;
       }
 
+
       .logo {
         color: #292433;
         text-decoration: none;
+
         font-size: 25px;
         letter-spacing: -1px;
       }
+
 
       .nav-links {
         display: flex;
         gap: 34px;
       }
 
+
       .nav-links a {
         color: #4e4659;
         text-decoration: none;
+
         font-family: Arial, sans-serif;
         font-size: 13px;
+
         transition: 0.2s ease;
       }
+
 
       .nav-links a:hover {
         color: #8570b5;
@@ -233,9 +293,11 @@
       .hero {
         min-height: 440px;
         padding: 80px 10%;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         background:
           radial-gradient(
             circle at 85% 35%,
@@ -245,47 +307,65 @@
           );
       }
 
+
       .hero-content {
         max-width: 650px;
       }
 
+
       .eyebrow {
         margin: 0 0 20px;
+
         font-family: Arial, sans-serif;
         font-size: 10px;
         letter-spacing: 2.5px;
+
         color: #8873b2;
       }
 
+
       h1 {
         margin: 0;
+
         font-size: clamp(50px, 6vw, 78px);
         line-height: 0.98;
         font-weight: 400;
         letter-spacing: -3px;
+
         color: #292433;
       }
+
 
       .intro {
         max-width: 470px;
         margin: 28px 0;
+
         font-size: 18px;
         line-height: 1.6;
+
         color: #716a7b;
       }
 
+
       .button {
         display: inline-block;
+
         padding: 13px 22px;
+
         border: 1px solid #a997c7;
         border-radius: 2px;
+
         color: #4d4260;
         text-decoration: none;
+
         font-family: Arial, sans-serif;
         font-size: 12px;
+
         background: #f4efff;
+
         transition: 0.25s ease;
       }
+
 
       .button:hover {
         background: #dcd0f4;
@@ -300,25 +380,34 @@
 
       .hero-doodle {
         width: 230px;
+
         display: flex;
         align-items: center;
+
         gap: 10px;
+
         transform: rotate(-5deg);
         margin-right: 8%;
+
         color: #917db8;
       }
+
 
       .hero-doodle span {
         font-size: 22px;
       }
 
+
       .doodle-line {
         width: 120px;
         height: 60px;
+
         border-top: 1px solid #a99ac1;
         border-radius: 50%;
+
         transform: rotate(20deg);
       }
+
 
       .paper-plane {
         font-size: 24px !important;
@@ -334,6 +423,7 @@
         border-top: 1px solid #ddd2ef;
       }
 
+
       .section-inner {
         max-width: 1100px;
         margin: 0 auto;
@@ -346,32 +436,45 @@
 
       .about {
         padding: 70px 10%;
+
         display: grid;
         grid-template-columns: 220px 1fr;
+
         gap: 75px;
+
         align-items: center;
+
         background: #faf7ff;
       }
 
 
-      /* SMALL CIRCULAR PHOTO */
+      /* CIRCULAR PHOTO */
 
       .about-image {
         width: 175px;
         height: 175px;
+
         overflow: hidden;
         border-radius: 50%;
+
         border: 5px solid #eee5fb;
-        box-shadow: 0 8px 25px rgba(112, 89, 145, 0.12);
+
+        box-shadow:
+          0 8px 25px rgba(112, 89, 145, 0.12);
+
         margin: 0 auto;
+
         background: #eee5fb;
       }
+
 
       .about-image img {
         width: 100%;
         height: 100%;
+
         object-fit: cover;
         object-position: center;
+
         display: block;
       }
 
@@ -380,21 +483,28 @@
         max-width: 550px;
       }
 
+
       h2 {
         margin: 0 0 25px;
+
         font-size: 36px;
         line-height: 1.1;
         font-weight: 400;
         letter-spacing: -1px;
+
         color: #30283a;
       }
+
 
       .about-content p:not(.eyebrow) {
         font-size: 17px;
         line-height: 1.65;
+
         color: #706879;
+
         margin: 0 0 18px;
       }
+
 
       .about-content em {
         color: #635080;
@@ -407,8 +517,10 @@
 
       .deep-dives {
         padding: 70px 10%;
+
         background: #f6f0ff;
       }
+
 
       .deep-dives h2 {
         margin-bottom: 35px;
@@ -420,52 +532,110 @@
       ================================= */
 
       .article-card {
+        position: relative;
+
+        max-width: 800px;
+
         border: 1px solid #d8cbe9;
+
         background: #fbf9ff;
-        padding: 30px 35px;
+
+        padding: 30px 70px 30px 35px;
+
         display: flex;
         gap: 30px;
         align-items: center;
-        max-width: 800px;
+
         border-radius: 4px;
-        transition: 0.25s ease;
+
+        text-decoration: none;
+        color: inherit;
+
+        cursor: pointer;
+
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          background 0.25s ease;
       }
 
+
       .article-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(116, 91, 151, 0.08);
+        transform: translateY(-3px);
+
+        box-shadow:
+          0 10px 28px rgba(116, 91, 151, 0.12);
+
+        background: #fffaff;
       }
+
 
       .article-number {
         font-size: 25px;
         color: #a08dbd;
       }
 
+
       .article-info {
         border-left: 1px solid #ddd2ef;
         padding-left: 28px;
       }
 
+
       .coming-soon {
         margin: 0 0 8px;
+
         font-family: Arial, sans-serif;
         font-size: 10px;
         letter-spacing: 2px;
+
         color: #9176b5;
       }
 
+
       .article-info h3 {
         margin: 0 0 8px;
+
         font-size: 22px;
         font-weight: 400;
+
         color: #332b3c;
       }
 
+
       .article-info p:last-child {
         margin: 0;
+
         color: #777080;
+
         font-size: 14px;
         line-height: 1.5;
+      }
+
+
+      /* CARD ARROW */
+
+      .article-arrow {
+        position: absolute;
+
+        right: 28px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        font-size: 22px;
+
+        color: #9a86b9;
+
+        transition:
+          transform 0.25s ease,
+          color 0.25s ease;
+      }
+
+
+      .article-card:hover .article-arrow {
+        transform: translate(5px, -50%);
+        color: #765e9c;
       }
 
 
@@ -475,13 +645,17 @@
 
       .notes {
         padding: 70px 10%;
+
         background: #fffaff;
       }
 
+
       .notes p:last-child {
         color: #706879;
+
         font-size: 17px;
         line-height: 1.65;
+
         max-width: 450px;
       }
 
@@ -492,12 +666,18 @@
 
       footer {
         border-top: 1px solid #ddd2ef;
+
         text-align: center;
+
         padding: 35px 20px;
+
         background: #f1eaff;
+
         color: #756d80;
+
         font-size: 13px;
       }
+
 
       footer em {
         color: #66547d;
@@ -514,9 +694,11 @@
           padding: 0 6%;
         }
 
+
         .nav-links {
           gap: 15px;
         }
+
 
         .nav-links a {
           font-size: 11px;
@@ -528,9 +710,11 @@
           min-height: auto;
         }
 
+
         h1 {
           font-size: 48px;
         }
+
 
         .hero-doodle {
           display: none;
@@ -539,14 +723,19 @@
 
         .about {
           padding: 60px 8%;
+
           grid-template-columns: 1fr;
+
           gap: 35px;
+
           text-align: left;
         }
+
 
         .about-image {
           width: 170px;
           height: 170px;
+
           margin: 0;
         }
 
@@ -558,11 +747,29 @@
 
 
         .article-card {
-          padding: 22px;
+          padding: 22px 50px 22px 22px;
+
+          gap: 20px;
         }
+
 
         .article-info {
           padding-left: 20px;
+        }
+
+
+        .article-number {
+          font-size: 20px;
+        }
+
+
+        .article-info h3 {
+          font-size: 20px;
+        }
+
+
+        .article-arrow {
+          right: 18px;
         }
 
 

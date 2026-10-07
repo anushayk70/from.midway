@@ -1,0 +1,109 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The flower that waits 12 years — from.midway</title>
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="paper">
+
+        <div class="writing-area">
+          <!-- Your Neelakurinji research will go here -->
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: #eee6f7;
+    color: #4b4058;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .page {
+    min-height: 100vh;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    background:
+      radial-gradient(
+        circle at 10% 10%,
+        #faf6ff 0%,
+        transparent 30%
+      ),
+      radial-gradient(
+        circle at 90% 90%,
+        #e4d8f1 0%,
+        transparent 35%
+      ),
+      #eee6f7;
+  }
+
+  .paper {
+    width: min(1100px, 100%);
+    min-height: calc(100vh - 70px);
+
+    background-image: url("/images/neelakurinji-writing-bg.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    border-radius: 18px;
+
+    box-shadow:
+      0 20px 60px rgba(100, 76, 125, 0.14);
+
+    overflow: hidden;
+  }
+
+  .writing-area {
+    min-height: calc(100vh - 70px);
+
+    /*
+      Large empty space in the centre.
+      This is where the research will eventually go.
+    */
+
+    padding: 150px 150px;
+  }
+
+  @media (max-width: 800px) {
+    .page {
+      padding: 15px;
+    }
+
+    .paper {
+      min-height: calc(100vh - 30px);
+      background-size: cover;
+    }
+
+    .writing-area {
+      min-height: calc(100vh - 30px);
+      padding: 100px 55px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .writing-area {
+      padding: 80px 30px;
+    }
+  }
+</style>
